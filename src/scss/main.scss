@@ -1,0 +1,74 @@
+@function em($px, $fz: 16) {
+  $px: $px * 1px;
+  $fz: $fz * 1px;
+  @return $px / $fz#{em};
+}
+
+@function min($arg1, $arg2) {
+  @return #{'min('}$arg1, $arg2#{')'};
+}
+
+@mixin flex-gap($gap) {
+  margin-top: -$gap;
+  margin-left: -$gap;
+
+  > * {
+    margin-top: $gap;
+    margin-left: $gap;
+  }
+}
+
+@mixin flex-column-gap($gap) {
+  margin-left: -$gap;
+
+  > * {
+    margin-left: $gap;
+  }
+}
+
+@mixin flex-row-gap($gap) {
+  margin-top: -$gap;
+
+  > * {
+    margin-top: $gap;
+  }
+}
+
+@import 'fonts';
+
+@import 'libs/normalize';
+@import 'libs/preset';
+
+@import 'variables';
+
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/logo';
+@import 'blocks/header';
+@import 'blocks/navbar';
+@import 'blocks/nav-btn';
+@import 'blocks/hero';
+
+@media (max-width: 760px) {
+  :root {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: $ff-primary-regular;
+  line-height: 1.635;
+  color: $clr-primary;
+  transition: transform .5s ease;
+}
+
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-bold { font-family: $ff-primary-bold }
+
+@import 'media';

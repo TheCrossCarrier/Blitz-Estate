@@ -1,0 +1,21 @@
+.nav-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+
+  &__svg {}
+
+  &__bar {
+    fill: $clr-secondary;
+    transition: width .3s ease-in-out;
+  }
+
+  &:hover &__bar {
+    width: 40Px;
+  }
+
+  &__text {
+    margin-left: 20px;
+    padding: em(10) 0;
+  }
+}

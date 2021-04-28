@@ -4,6 +4,7 @@ import include from 'gulp-file-include'
 import htmlmin from 'gulp-htmlmin'
 import autoPrefixer from 'gulp-autoprefixer'
 import concat from 'gulp-concat'
+import sass from 'gulp-sass'
 import pxtorem from 'gulp-pxtorem'
 import replace from 'gulp-replace'
 import csso from 'gulp-csso'
@@ -20,14 +21,15 @@ const html = () => src('src/**/*.html')
   .pipe(stream())
 
 const css = () => src([
-  'src/css/preset.css',
+  // 'src/css/preset.css',
   // 'src/css/variables.css',
-  'src/css/fonts.css',
-  'src/css/style.css',
-  'src/css/media.css',
-  'src/css/**/*.css'
+  // 'src/css/fonts.css',
+  // 'src/css/style.css',
+  // 'src/css/media.css',
+  // 'src/css/**/*.css',
+  'src/scss/**/*.scss'
 ])
-  .pipe(concat('style.css'))
+  .pipe(sass())
   .pipe(autoPrefixer())
   .pipe(pxtorem({
     rootValue: 16,
@@ -39,7 +41,10 @@ const css = () => src([
   .pipe(dest('dist/css'))
   .pipe(stream())
 
-const js = () => src('src/js/**/*.js')
+const js = () => src([
+  'src/js/nav-menu.js',
+  'src/js/**/*.js'
+])
   .pipe(concat('script.js'))
   .pipe(uglify())
   .pipe(dest('dist/js'))
@@ -63,7 +68,7 @@ const serve = () => {
   })
 
   watch('src/**/*.html', html).on('change', reload)
-  watch('src/css/**/*.css', css)
+  watch('src/scss/**/*.scss', css)
   watch('src/js/**/*.js', js)
   watch('src/img/**/*', img)
   watch('src/fonts/**/*', fonts)

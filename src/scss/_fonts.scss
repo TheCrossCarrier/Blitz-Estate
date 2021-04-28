@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Geometria Regular';
+  src: local('Geometria Regular'), local('Geometria-Regular'),
+    url('../fonts/Geometria-Regular/Geometria-Regular.woff2') format('woff2'),
+    url('../fonts/Geometria-Regular/Geometria-Regular.woff') format('woff'),
+    url('../fonts/Geometria-Regular/Geometria-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria ExtraBold';
+  src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+    url('../fonts/Geometria-ExtraBold/Geometria-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Geometria-ExtraBold/Geometria-ExtraBold.woff') format('woff'),
+    url('../fonts/Geometria-ExtraBold/Geometria-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Light';
+  src: local('Geometria Light'), local('Geometria-Light'),
+    url('../fonts/Geometria-Light/Geometria-Light.woff2') format('woff2'),
+    url('../fonts/Geometria-Light/Geometria-Light.woff') format('woff'),
+    url('../fonts/Geometria-Light/Geometria-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Medium';
+  src: local('Geometria Medium'), local('Geometria-Medium'),
+    url('../fonts/Geometria-Medium/Geometria-Medium.woff2') format('woff2'),
+    url('../fonts/Geometria-Medium/Geometria-Medium.woff') format('woff'),
+    url('../fonts/Geometria-Medium/Geometria-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Bold';
+  src: local('Geometria Bold'), local('Geometria-Bold'),
+    url('../fonts/Geometria-Bold/Geometria-Bold.woff2') format('woff2'),
+    url('../fonts/Geometria-Bold/Geometria-Bold.woff') format('woff'),
+    url('../fonts/Geometria-Bold/Geometria-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Heavy';
+  src: local('Geometria Heavy'), local('Geometria-Heavy'),
+    url('../fonts/Geometria-Heavy/Geometria-Heavy.woff2') format('woff2'),
+    url('../fonts/Geometria-Heavy/Geometria-Heavy.woff') format('woff'),
+    url('../fonts/Geometria-Heavy/Geometria-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,29 @@
+.btn {
+  padding: em(20) em(50);
+  width: fit-content;
+  border: em(1.6) solid $clr-secondary;
+  border-radius: em(5);
+  font-family: $ff-primary-medium;
+
+  &_fill {
+    background-color: $clr-secondary;
+    color: $clr-white;
+    transition: background-color $transition-default;
+
+    &:hover {
+      background-color: darken($clr-secondary, 5%);
+    }
+  }
+
+  &_outline {
+    background-color: transparent;
+    transition:
+      background-color $transition-default,
+      color            $transition-default;
+
+    &:hover {
+      background-color: $clr-secondary;
+      color: $clr-white;
+    }
+  }
+}

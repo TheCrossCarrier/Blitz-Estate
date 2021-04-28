@@ -1,0 +1,81 @@
+.hero {
+  padding-bottom: 70px;
+
+  @media (max-width: 760px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 15px 0;
+    max-width: 600px;
+    font: min(50px, 6.66vw)/1.5 $ff-primary-heavy;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 550px;
+    font-size: 22px;
+  }
+
+  &__facts {
+    padding: 20px 0;
+    display: flex;
+    @include flex-column-gap(50px);
+  }
+
+  &__fact {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__number {
+    margin-bottom: -0.13em;
+    font: 80px/1 $ff-primary-light;
+  }
+
+  &__number-description {
+    margin-left: 20px;
+  }
+
+  @media (max-width: $container-max-width + $container-padding-x * 2) {
+    &__facts {
+      align-items: flex-start;
+      @include flex-column-gap(100px);
+    }
+    &__fact {
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__number-description {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    &__facts {
+      flex-flow: column;
+      align-items: center;
+      @include flex-row-gap(35px);
+    }
+  }
+
+  &__champagne {
+    margin: 43px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__champagne-icon.icon {
+    margin-right: 20px;
+    width: 68px;
+    height: 73px;
+  }
+
+  &__champagne-text {
+    max-width: 400px;
+  }
+}

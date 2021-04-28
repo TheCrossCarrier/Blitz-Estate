@@ -1,0 +1,48 @@
+{
+  "name": "blitz-estate",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCrossCarrier/Blitz-Estate.git"
+  },
+  "keywords": [
+    "layout",
+    "sass",
+    "scss",
+    "gulp",
+    "html",
+    "js",
+    "css",
+    "responsive",
+    "portfolio"
+  ],
+  "author": "Daniel Khachaturian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCrossCarrier/Blitz-Estate/issues"
+  },
+  "homepage": "https://github.com/TheCrossCarrier/Blitz-Estate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pxtorem": "^3.0.0",
+    "gulp-replace": "^1.1.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
